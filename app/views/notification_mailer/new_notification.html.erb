@@ -1,0 +1,13 @@
+<h1>Nouvelle notification</h1>
+
+<p>Bonjour <%= @user.email %>,</p>
+
+<p>Vous avez reçu une nouvelle notification de <strong><%= @notification.from_organization.name %></strong> :</p>
+
+<h2><%= @notification.title %></h2>
+<p><strong>Priorité:</strong> <%= @notification.priority %></p>
+
+<p><%= simple_format(@notification.body) %></p>
+
+<hr>
+<p><small>Cette notification a été envoyée depuis NotifyHub</small></p>

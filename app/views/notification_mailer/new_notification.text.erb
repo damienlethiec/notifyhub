@@ -1,0 +1,12 @@
+Bonjour <%= @user.email %>,
+
+Vous avez reçu une nouvelle notification de <%= @notification.from_organization.name %> :
+
+Titre: <%= @notification.title %>
+Priorité: <%= @notification.priority %>
+
+Message:
+<%= @notification.body %>
+
+---
+Cette notification a été envoyée depuis NotifyHub
